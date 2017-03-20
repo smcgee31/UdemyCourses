@@ -17,7 +17,7 @@ var GreeterForm = React.createClass({                         // This is also a 
     e.preventDefault();                                       // length (which just checks to see that it exists) and then clears
                                                               // the input field. Then calls the function that exists in the parent
     var name = this.refs.name.value;                          // 'onNewName' that takes one parameter. onNewName itself calls the
-    if (name.length> 0) {                                     // 'handleNewName' function that uses setState()
+    if (name.length > 0) {                                     // 'handleNewName' function that uses setState()
       this.refs.name.value = '';
       this.props.onNewName(name);
     }
